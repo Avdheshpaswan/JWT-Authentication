@@ -1,5 +1,5 @@
 import uvicorn 
-from fastapi import FastAPI
+from fastapi import FastAPI,HTTPException
 from app.model import PostSchema
 
 posts=[
@@ -17,6 +17,11 @@ posts=[
         "id":3,
         "title":"netflix",
         "content":"netflix is ocean of movies and shows to watch around the globe"
+    },
+    {
+        "id":4,
+        "title":"AI-Era",
+        "content":"advancement in latest tech world has boosted the development multifolds in future"
     }    
 ]
 
